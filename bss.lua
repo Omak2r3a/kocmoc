@@ -6,7 +6,7 @@ getgenv().ExploitSpecific = "📜"
 
 -- API CALLS
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Omak2r3a/kocmoc/main/library.lua"))()
--- getgenv().api = loadstring(game:HttpGet("https://raw.githubusercontent.com/Omak2r3a/kocmoc/main/api.lua"))()
+getgenv().api = loadstring(game:HttpGet("https://raw.githubusercontent.com/Omak2r3a/kocmoc/main/api.lua"))()
 local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/Omak2r3a/kocmoc/main/bssapi.lua"))()
 if not isfolder("kocmoc") then makefolder("kocmoc") end
 if isfile('kocmoc.txt') == false then (syn and syn.request or http_request or request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = {["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({cmd = "INVITE_BROWSER",args = {code = "AFX7Yye8F8"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kocmoc.txt', "discord")})end
